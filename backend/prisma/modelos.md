@@ -6,18 +6,33 @@ no en código real, los modelos que más adelante se definirían en
 boceto de qué campos y relaciones tendría cada modelo.
 
 ## Usuario
-- id, nombre, correo (único)
-- rol: ADMIN, BIBLIOTECARIO o LECTOR
+- id (Int, PK)
+- nombre (String)
+- correo (String, único)
+- password (String, encriptado)
+- rol (Enum: ADMIN, BIBLIOTECARIO, LECTOR)
+- activo (Boolean)
 
 ## Libro
-- id, título, autor
+- id (Int, PK)
+- título (String)
+- autor (String)
+- isbn (String, único)
+- copiasTotal (Int)
+- copiasDisponibles (Int)
 
 ## Catalogo
-- id, nombre
-- agrupa varios `Libro`
+- id (Int, PK)
+- nombre (String, único)
 
 ## Prestamo
-- id, fecha
-- relaciona un `Usuario` con un `Libro`
+- id (Int, PK)
+- usuarioId (Int, FK)
+- libroId (Int, FK)
+- fechaSolicitud (DateTime)
+- fechaDevolucionLimite (DateTime)
+- fechaDevolucionReal (DateTime)
+- estado (Enum: ACTIVO, DEVUELTO, VENCIDO)
 
-_Placeholder de estructura — sin implementación real, solo boceto de modelos._
+> [!NOTE]
+> Para ver el diccionario de datos detallado con sus tipos y el diagrama Entidad-Relación, consulta [backend/src/models/entidades.md](file:///D:/Users/JoseLuis/Desktop/UTP/web/sgbd-biblioteca-puebla/backend/src/models/entidades.md).
