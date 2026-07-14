@@ -1,16 +1,10 @@
-# Caso de Estudio: SGBD
+# Caso de Estudio - SGBD Biblioteca Puebla
 
-Documento que justifica de forma integral las decisiones tecnológicas y
-metodológicas adoptadas para el desarrollo del Sistema de Gestión de
-Biblioteca Digital (SGBD).
+Análisis del flujo real de la biblioteca para el diseño del sistema automatizado.
 
-## Contenido (borrador)
+## Problemática Detectada
+* Registro manual de libros en formato físico, propiciando pérdidas de información.
+* Falta de control estricto sobre las fechas límite de devolución de los usuarios.
 
-1. Introducción y contexto del problema
-2. Justificación de React 18 como framework de presentación
-3. Arquitectura MVC en el backend
-4. Metodología ágil Scrum
-5. Patrones de diseño aplicados
-6. Conclusiones
-
-_Pendiente de desarrollo — placeholder para primer commit._
+## Solución Propuesta
+* Implementación de una base de datos relacional para gestionar inventarios en tiempo real y automatizar las alertas de préstamos vencidos.
