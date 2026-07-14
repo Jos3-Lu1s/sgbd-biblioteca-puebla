@@ -1,7 +1,11 @@
-# Metodología Ágil: Scrum
+# Metodología Scrum - Gestión del Proyecto
 
-Justificación del uso de Scrum para la gestión del proyecto SGBD: roles,
-eventos (sprint planning, daily, review, retrospectiva) y artefactos
-(product backlog, sprint backlog, incremento).
+Estrategia de desarrollo ágil utilizada para el diseño e integración del SGBD.
 
-_Pendiente de desarrollo — placeholder para primer commit._
+## Roles del Equipo
+* **Product Owner / Scrum Master:** Gestión de requerimientos de la biblioteca.
+* **Desarrollador Asignado:** Michael
+* **Rama de Trabajo Actual:** `feature/docs-michael`
+
+## Estado del Sprint
+* **Inicializado / En proceso de integración:** Documentación base del modelo relacional y arquitectura de software.
